@@ -3,7 +3,7 @@
 
   <el-row :gutter="20">
       <el-col :span="5">
-        <el-select v-model="province" placeholder="请输入省">
+        <el-select v-model="province" placeholder="请输入省" @change="proChange" filterable>
           <el-option
             v-for="item in provinces"
             :label="item.label"
@@ -13,7 +13,7 @@
       </el-col>
 
     <el-col :span="5">
-      <el-select v-model="city" placeholder="请输入市">
+      <el-select v-model="city" placeholder="请输入市" @change="cityChange" filterable>
         <el-option
           v-for="item in citys"
           :label="item.label"
@@ -52,38 +52,29 @@
       return {
         province: '',
         city: '',
-        detail: ''
+        detail: '',
+        provinces: formatData(addressData)
       }
     },
     computed: {
-      provinces: function (){
-        return formatData(addressData)
-      },
       citys: function (){
+        console.log('计算citys');
         return formatData(addressData[this.province])
       }
     },
     watch: {
-      'province': function (newval,oldval){
-        this.$nextTick(function () {
-          console.log(newval)
-          this.citys = formatData(addressData[newval]);
-        })
+      citys: function (val, oldval) {
+        console.log('citys变化了');
       },
-      'citys': function (){
-          this.city = "";
-          console.log('更新city')
+      city: function (val) {
+        console.log('city变化了'+val);
       }
     },
     methods: {
-      initAddress: function (pro,citys,detail){
-//        this.citys = formatData(addressData[pro]);
-//        this.detail = "";
+      proChange: function (val) {
+      },
+      cityChange: function (val) {
       }
-    },
-    ready: function (){
-//      this.initAddress(this.province)
+      }
     }
-
-  }
 </script>

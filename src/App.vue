@@ -49,6 +49,7 @@ export default {
   width: 1200px;
   margin: 0 auto;
   border-top: solid 4px #3091F2;
+  font-family: "Helvetica Neue","PingFang SC",Arial,sans-serif;
 }
 
 main{

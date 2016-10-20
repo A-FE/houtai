@@ -63,7 +63,7 @@
             <el-radio class="radio" v-model="radio" label="2">限制</el-radio>
           </el-col>
           <el-col :span="6">
-            <el-input placeholder="0" :number="true" size="large" v-model="input""><template slot="append">人</template></el-input>
+            <el-input placeholder="0" :number="true" size="large" v-model="input"><template slot="append">人</template></el-input>
           </el-col>
           </el-row>
         </el-form-item>
@@ -137,7 +137,7 @@
 
         <el-form-item>
           <el-button @click.native.prevent>预览</el-button>
-          <el-button type="primary">下一步</el-button>
+          <el-button type="primary"><router-link to="/step2"  class="router-link">下一步</router-link></el-button>
         </el-form-item>
       </el-form>
 
@@ -158,6 +158,7 @@
 <script>
   import addressSelect from 'src/components/address.vue'
   export default {
+    name:'step1',
     components: {
       'address-select' : addressSelect
     },
@@ -275,26 +276,28 @@
 </script>
 <style>
     .step{margin-bottom: 30px;}
-    .demo-ruleForm .el-form-item{margin-bottom: 35px;margin-right: 50px;}
+    .step1 .demo-ruleForm .el-form-item{margin-bottom: 35px;margin-right: 50px;}
 
-    .el-form-item.is-required .el-form-item__label:after {
+    .step1 .el-form-item.is-required .el-form-item__label:after {
       content: '*';
       color: #ff4949;
       margin-right: 4px;
     }
-    .el-form-item.is-required .el-form-item__label:before { display: none; }
+    .step1 .el-form-item.is-required .el-form-item__label:before { display: none; }
     /* 标签 */
-    .demo-ruleForm  .el-tag{padding: 10px 15px;margin:10px;vertical-align: middle;}
-    .demo-ruleForm  .el-tag:first-child{margin-left: 0;}
-    .demo-ruleForm  .el-button{vertical-align: middle;margin: 10px;}
+    .step1 .demo-ruleForm  .el-tag{padding: 10px 15px;margin:10px;vertical-align: middle;}
+    .step1 .demo-ruleForm  .el-tag:first-child{margin-left: 0;}
+    .step1 .demo-ruleForm  .el-button{vertical-align: middle;margin: 10px;}
 
     /* 对话框 */
-    .el-dialog__body{padding-bottom: 0;}
-    .el-dialog__body .el-form-item{margin-bottom: 10px;}
+    .step1 .el-dialog__body{padding-bottom: 0;}
+    .step1 .el-dialog__body .el-form-item{margin-bottom: 10px;}
 
    /* 时间选择器 */
-    .el-date-editor, .el-date-editor__editor, .el-time-panel__footer{height: 44px;}
-    .el-date-editor__trigger.el-icon{width:20px;height:20px;line-height: 44px;}
+    .step1 .el-date-editor, .el-date-editor__editor, .el-time-panel__footer{height: 44px;}
+    .step1 .el-date-editor__trigger.el-icon{width:20px;height:20px;line-height: 44px;}
 
-    .el-input-group__append, .el-input-group__prepend{background:none;border-left: 0; color: #333; }
+    .step1 .el-input-group__append, .el-input-group__prepend{background:none;border-left: 0; color: #333; }
+
+    .step1 .el-form-item .router-link{color:#fff;}
 </style>

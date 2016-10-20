@@ -1,8 +1,7 @@
-var config = require('../config')
-if (!process.env.NODE_ENV) process.env.NODE_ENV = config.dev.env
 var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
+var config = require('../config')
 var opn = require('opn')
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = require('./webpack.dev.conf')
