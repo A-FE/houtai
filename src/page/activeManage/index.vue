@@ -3,6 +3,7 @@
         <h2>{{ activeTitle }}</h2>
         <el-row :gutter="20">
             <el-col :span="5">发起人: {{ hostPerson }}</el-col>
+<<<<<<< HEAD
             <el-col :span="10">发起时间: {{ hostTime }}</el-col>
             <el-col :span="5">浏览数: {{ readNum }}</el-col>
         </el-row>
@@ -19,6 +20,20 @@
         <router-view></router-view>
       <el-button @click.native.prevent="handleCancel"   >取消</el-button>
       <el-button @click.native.prevent="handleSave"     type="primary">保存</el-button>
+=======
+            <el-col :span="5">发起时间: {{ hostTime }}</el-col>
+            <el-col :span="5">浏览数: {{ readNum }}</el-col>
+        </el-row>
+
+        <el-row :gutter="20">
+            <el-tabs>
+              <el-tab-pane label="活动信息"></el-tab-pane>
+              <el-tab-pane label="报名签到"></el-tab-pane>
+              <el-tab-pane label="分享设置"></el-tab-pane>
+              <el-tab-pane label="个性化设置"></el-tab-pane>
+            </el-tabs>
+        </el-row>
+>>>>>>> origin/master
     </div>
 </template>
 
@@ -34,6 +49,7 @@
               readNum:'1999'
             }
         },
+<<<<<<< HEAD
         methods: {
           routerTo: function (val) {
             this.$router.push('/activeManage/page'+val);
@@ -44,6 +60,9 @@
           handleSave: function () {
 
           }
+=======
+        methods: function () {
+>>>>>>> origin/master
 
         },
         watch: function () {

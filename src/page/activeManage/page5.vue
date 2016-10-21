@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="page5">
     <el-card class="box-card">
       <el-row :gutter="20" align="middle" type="flex" justify="end" style="margin-bottom: 20px;">
@@ -50,11 +51,16 @@
       </el-row>
 
     </el-card>
+=======
+  <div class="page1">
+    评价管理
+>>>>>>> origin/master
   </div>
 </template>
 
 <script>
   export default {
+<<<<<<< HEAD
     name: 'page5',
     data: function () {
       return {
@@ -94,6 +100,20 @@
     },
     methods: {},
     watch: {}
+=======
+    name:'page5',
+    data: function () {
+      return {
+
+      }
+    },
+    methods: function () {
+
+    },
+    watch: function () {
+
+    }
+>>>>>>> origin/master
   }
 
 </script>

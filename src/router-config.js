@@ -5,8 +5,12 @@ import step2 from './page/activePublic/step2.vue'
 import step3 from './page/activePublic/step3.vue'
 import step4 from './page/activePublic/step4.vue'
 
+<<<<<<< HEAD
 import allActive from './page/activeManage/allActive.vue'
 import activeManage from './page/activeManage/index.vue'
+=======
+import index from './page/activeManage/index.vue'
+>>>>>>> origin/master
 import page1 from './page/activeManage/page1.vue'
 import page2 from './page/activeManage/page2.vue'
 import page3 from './page/activeManage/page3.vue'
@@ -32,6 +36,7 @@ export default [
       { path: 'page5', component: page5  }
     ]
   },{
+<<<<<<< HEAD
     path:'/activePublic',component:activePublic,
     children:[
       { path: ''      , component: step1  },
@@ -40,5 +45,42 @@ export default [
       { path: 'step3', component: step3  },
       { path: 'step4', component: step4  }
     ]
+=======
+    path: '/step2',
+    name: 'step2',
+    component: step2
+  }, {
+    path: '/step3',
+    name: 'step3',
+    component: step3
+  },{
+    path: '/step4',
+    name: 'step4',
+    component: step4
+  },{
+    path: '/index',
+    name: 'index',
+    component: index
+},{
+    path: '/page1',
+    name: 'page1',
+    component: page1
+  },{
+    path: '/page2',
+    name: 'page2',
+    component: page2
+  },{
+    path: '/page3',
+    name: 'page3',
+    component: page3
+  },{
+    path: '/page4',
+    name: 'page4',
+    component: page4
+  },{
+    path: '/page5',
+    name: 'page5',
+    component: page5
+>>>>>>> origin/master
   }
 ]
