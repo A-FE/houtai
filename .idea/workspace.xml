@@ -20,13 +20,213 @@
     <favorites_list name="my-project" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/activeManage/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-36.179485">
+              <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+              <folding>
+                <element signature="e#948#1464#0" expanded="true" />
+                <element signature="e#998#1178#0" expanded="true" />
+                <element signature="e#1019#1168#0" expanded="true" />
+                <element signature="e#1197#1417#0" expanded="true" />
+                <element signature="e#1234#1304#0" expanded="true" />
+                <element signature="e#1342#1356#0" expanded="true" />
+                <element signature="e#1392#1406#0" expanded="true" />
+                <element signature="e#1446#1458#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page1.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/activeManage/page1.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.538462">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#516#526#0" expanded="true" />
+                <element signature="e#547#654#0" expanded="true" />
+                <element signature="e#580#648#0" expanded="true" />
+                <element signature="e#667#675#0" expanded="true" />
+                <element signature="e#702#710#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page2.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/activeManage/page2.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5384616">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#el-row#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-row#1;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-table#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-row#2;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#2259#3345#0" expanded="true" />
+                <element signature="e#2305#3255#0" expanded="true" />
+                <element signature="e#2324#3245#0" expanded="true" />
+                <element signature="e#2402#3198#0" expanded="true" />
+                <element signature="e#2403#2561#0" expanded="true" />
+                <element signature="e#2562#2720#0" expanded="true" />
+                <element signature="e#2721#2879#0" expanded="true" />
+                <element signature="e#2880#3038#0" expanded="true" />
+                <element signature="e#3039#3197#0" expanded="true" />
+                <element signature="e#3327#3339#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page3.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/activeManage/page3.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="76" column="9" selection-start-line="70" selection-start-column="8" selection-end-line="76" selection-end-column="9" />
+              <folding>
+                <element signature="n#style#0;n#el-row#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-table#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-row#2;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#2376#2510#0" expanded="true" />
+                <element signature="e#2511#2645#0" expanded="true" />
+                <element signature="e#2646#2780#0" expanded="true" />
+                <element signature="e#2781#2915#0" expanded="true" />
+                <element signature="e#2916#3050#0" expanded="true" />
+                <element signature="e#3156#3164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page4.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/activeManage/page4.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.948718">
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-table#0;n#el-row#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-row#6;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-table#0;n#el-row#8;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-row#9;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#3429#5522#0" expanded="true" />
+                <element signature="e#3471#5161#0" expanded="true" />
+                <element signature="e#3486#5155#0" expanded="true" />
+                <element signature="e#3674#4295#0" expanded="true" />
+                <element signature="e#3675#3785#0" expanded="true" />
+                <element signature="e#3787#3897#0" expanded="true" />
+                <element signature="e#3909#4029#0" expanded="true" />
+                <element signature="e#4041#4161#0" expanded="true" />
+                <element signature="e#4173#4294#0" expanded="true" />
+                <element signature="e#4317#5147#0" expanded="true" />
+                <element signature="e#4318#4482#0" expanded="true" />
+                <element signature="e#4484#4648#0" expanded="true" />
+                <element signature="e#4650#4814#0" expanded="true" />
+                <element signature="e#4816#4980#0" expanded="true" />
+                <element signature="e#4982#5146#0" expanded="true" />
+                <element signature="e#5177#5473#0" expanded="true" />
+                <element signature="e#5210#5466#0" expanded="true" />
+                <element signature="e#5489#5497#0" expanded="true" />
+                <element signature="e#5510#5518#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page5.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/activeManage/page5.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="9.564102">
+              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#el-row#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-table#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-row#1;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#2014#2877#0" expanded="true" />
+                <element signature="e#2057#2841#0" expanded="true" />
+                <element signature="e#2072#2835#0" expanded="true" />
+                <element signature="e#2116#2827#0" expanded="true" />
+                <element signature="e#2117#2258#0" expanded="true" />
+                <element signature="e#2259#2400#0" expanded="true" />
+                <element signature="e#2401#2542#0" expanded="true" />
+                <element signature="e#2543#2684#0" expanded="true" />
+                <element signature="e#2685#2826#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allActive.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/activeManage/allActive.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding>
+                <element signature="e#537#700#0" expanded="true" />
+                <element signature="e#592#694#0" expanded="true" />
+                <element signature="e#611#684#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router-config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/router-config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.47142857">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <folding>
+                <element signature="e#762#1065#0" expanded="true" />
+                <element signature="e#817#1057#0" expanded="true" />
+                <element signature="e#1252#1547#0" expanded="true" />
+                <element signature="e#1316#1543#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.846153">
+              <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/activePublic/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.3076923">
+              <caret line="12" column="104" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="104" />
+              <folding>
+                <element signature="e#817#2114#0" expanded="true" />
+                <element signature="e#866#1007#0" expanded="true" />
+                <element signature="e#881#1001#0" expanded="true" />
+                <element signature="e#1022#2090#0" expanded="true" />
+                <element signature="e#1057#1093#0" expanded="true" />
+                <element signature="e#1128#1219#0" expanded="true" />
+                <element signature="e#1255#1408#0" expanded="true" />
+                <element signature="e#1443#1479#0" expanded="true" />
+                <element signature="e#1508#2084#0" expanded="true" />
+                <element signature="e#2102#2110#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="vue" />
         <option value="JavaScript File" />
+        <option value="vue" />
       </list>
     </option>
   </component>
@@ -38,7 +238,6 @@
         <option value="$PROJECT_DIR$/src/page/activeMessage.vue" />
         <option value="$PROJECT_DIR$/src/router.js" />
         <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/src/page/activeManage/index.vue" />
         <option value="D:/soft/source/WebRoot/WEB-INF/page/bo/votewall/VoteWallLargeScreen.jsp" />
         <option value="$PROJECT_DIR$/src/components/dispicker.vue" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -51,12 +250,20 @@
         <option value="$PROJECT_DIR$/src/components/Addrselect.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/address.vue" />
-        <option value="$PROJECT_DIR$/src/router-config.js" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/page/activePublic/step3.vue" />
-        <option value="$PROJECT_DIR$/src/page/activePublic/step2.vue" />
         <option value="$PROJECT_DIR$/src/page/activePublic/step1.vue" />
+        <option value="$PROJECT_DIR$/src/page/activePublic/step2.vue" />
+        <option value="$PROJECT_DIR$/src/page/activePublic/step3.vue" />
         <option value="$PROJECT_DIR$/src/page/activePublic/step4.vue" />
+        <option value="$PROJECT_DIR$/src/page/activePublic/index.vue" />
+        <option value="$PROJECT_DIR$/src/page/activeManage/page1.vue" />
+        <option value="$PROJECT_DIR$/src/page/activeManage/index.vue" />
+        <option value="$PROJECT_DIR$/src/page/activeManage/page2.vue" />
+        <option value="$PROJECT_DIR$/src/page/activeManage/page3.vue" />
+        <option value="$PROJECT_DIR$/src/page/activeManage/page4.vue" />
+        <option value="$PROJECT_DIR$/src/page/activeManage/page5.vue" />
+        <option value="$PROJECT_DIR$/src/page/activeManage/allActive.vue" />
+        <option value="$PROJECT_DIR$/src/router-config.js" />
       </list>
     </option>
   </component>
@@ -68,9 +275,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="578" />
+    <option name="x" value="611" />
     <option name="y" value="5" />
-    <option name="width" value="1025" />
+    <option name="width" value="992" />
     <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -190,7 +397,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activeManage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -202,7 +413,7 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../my-project/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="editor.config.accepted" value="true" />
     <property name="JavaScriptLanguageLevel" value="ES6" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -211,11 +422,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Documents\GitHub\my-project" />
       <recent name="C:\Users\Administrator\WebstormProjects\ElementUI\my-project\src\page\activePublic" />
       <recent name="C:\Users\Administrator\WebstormProjects\ElementUI\my-project\src\components" />
       <recent name="C:\Users\Administrator\WebstormProjects\ElementUI\my-project\src\assets\js" />
       <recent name="C:\Users\Administrator\WebstormProjects\ElementUI\my-project\src" />
-      <recent name="C:\Users\Administrator\WebstormProjects\ElementUI\my-project\src\assets\bootstrap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\WebstormProjects\ElementUI\my-project\src\page\activePublic" />
@@ -280,17 +491,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="578" y="5" width="1025" height="860" extended-state="0" />
-    <editor active="false" />
+    <frame x="611" y="5" width="992" height="860" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20364742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20649895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5038002" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.4961998" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33470508" sideWeight="0.4961998" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -301,6 +512,25 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5038002" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33470508" sideWeight="0.4961998" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20278834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -328,81 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-          <folding>
-            <element signature="e#1330#1347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/address.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#894#1039#0" expanded="true" />
-            <element signature="e#961#1010#0" expanded="true" />
-            <element signature="e#1058#1667#0" expanded="true" />
-            <element signature="e#1102#1235#0" expanded="true" />
-            <element signature="e#1117#1229#0" expanded="true" />
-            <element signature="e#1251#1378#0" expanded="true" />
-            <element signature="e#1277#1372#0" expanded="true" />
-            <element signature="e#1391#1551#0" expanded="true" />
-            <element signature="e#1429#1471#0" expanded="true" />
-            <element signature="e#1500#1545#0" expanded="true" />
-            <element signature="e#1566#1661#0" expanded="true" />
-            <element signature="e#1600#1609#0" expanded="true" />
-            <element signature="e#1644#1653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/activePublic/step1.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#5983#6029#0" expanded="true" />
-            <element signature="e#6053#7740#0" expanded="true" />
-            <element signature="e#6068#7733#0" expanded="true" />
-            <element signature="e#6449#6480#0" expanded="true" />
-            <element signature="e#6500#6706#0" expanded="true" />
-            <element signature="e#6723#7569#0" expanded="true" />
-            <element signature="e#6741#6820#0" expanded="true" />
-            <element signature="e#6840#6921#0" expanded="true" />
-            <element signature="e#6942#7018#0" expanded="true" />
-            <element signature="e#7038#7119#0" expanded="true" />
-            <element signature="e#7138#7231#0" expanded="true" />
-            <element signature="e#7250#7343#0" expanded="true" />
-            <element signature="e#7361#7461#0" expanded="true" />
-            <element signature="e#7480#7559#0" expanded="true" />
-            <element signature="e#7585#7725#0" expanded="true" />
-            <element signature="e#7755#8807#0" expanded="true" />
-            <element signature="e#7788#7840#0" expanded="true" />
-            <element signature="e#7876#8099#0" expanded="true" />
-            <element signature="e#8147#8193#0" expanded="true" />
-            <element signature="e#8232#8268#0" expanded="true" />
-            <element signature="e#8303#8312#0" expanded="true" />
-            <element signature="e#8345#8354#0" expanded="true" />
-            <element signature="e#8386#8533#0" expanded="true" />
-            <element signature="e#8569#8653#0" expanded="true" />
-            <element signature="e#8684#8801#0" expanded="true" />
-            <element signature="e#8749#8791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/soft/source/WebRoot/WEB-INF/page/bo/votewall/VoteWallLargeScreen.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -414,69 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/activeManage/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/activeManage/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/404.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18154311">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/activeManage/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18154311">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -484,20 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.041899443">
           <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/static/img/element-icons.09162bc.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5428572">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/static/css/app.69927c862ba6a434657f632b13b7055c.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -515,27 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/jquery-3.0.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Element-ui/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31770045">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Hello.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5900151">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49924356">
@@ -543,163 +600,244 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/addressData.js">
+    <entry file="file://$PROJECT_DIR$/src/page/404.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../my-project/src/page/activePublic/step1.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8461537">
-          <caret line="158" column="54" selection-start-line="158" selection-start-column="29" selection-end-line="158" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.3293944">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.769231">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router-config.js">
+    <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#265#598#0" expanded="false" />
-            <element signature="e#269#334#0" expanded="false" />
-            <element signature="e#269#334#0" expanded="false" />
-            <element signature="e#402#467#0" expanded="false" />
-            <element signature="e#402#467#0" expanded="false" />
-            <element signature="e#534#597#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#390#415#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/activePublic/step4.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68980795">
-          <caret line="273" column="20" selection-start-line="273" selection-start-column="20" selection-end-line="273" selection-end-column="20" />
+        <state vertical-scroll-proportion="-5.3846154">
+          <caret line="238" column="14" selection-start-line="238" selection-start-column="14" selection-end-line="238" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#el-col#2;n#el-row#0;n#el-form-item#10;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-col#2;n#el-row#0;n#el-form-item#11;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#10341#11563#0" expanded="true" />
-            <element signature="e#10359#11554#0" expanded="true" />
-            <element signature="e#10447#11543#0" expanded="true" />
-            <element signature="e#11580#11742#0" expanded="true" />
-            <element signature="e#11614#11734#0" expanded="true" />
-            <marker date="1476960115892" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476960115892" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1477025932556" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1477025932556" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/activePublic/step3.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55686855">
-          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#router-link#0;n#el-button#0;n#el-form-item#3;n#el-form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1480#1580#0" expanded="true" />
-            <element signature="e#1495#1574#0" expanded="true" />
-            <element signature="e#1511#1566#0" expanded="true" />
-            <element signature="e#1595#1770#0" expanded="true" />
-            <element signature="e#1643#1689#0" expanded="true" />
-            <element signature="e#1728#1764#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.39290988">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/activePublic/step2.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32457495">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="e#5594#6102#0" expanded="true" />
-            <element signature="e#5635#6017#0" expanded="true" />
-            <element signature="e#5648#6013#0" expanded="true" />
-            <element signature="e#5679#6007#0" expanded="true" />
-            <element signature="e#6030#6098#0" expanded="true" />
-            <element signature="e#6057#6094#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.5760709">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/activePublic/step1.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39158577">
-          <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.35450518">
+          <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/activeManage/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-36.179485">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
           <folding>
-            <element signature="e#5983#6029#0" expanded="true" />
-            <element signature="e#6053#7740#0" expanded="true" />
-            <element signature="e#6068#7733#0" expanded="true" />
-            <element signature="e#6449#6480#0" expanded="true" />
-            <element signature="e#6500#6706#0" expanded="true" />
-            <element signature="e#6723#7569#0" expanded="true" />
-            <element signature="e#6741#6820#0" expanded="true" />
-            <element signature="e#6840#6921#0" expanded="true" />
-            <element signature="e#6942#7018#0" expanded="true" />
-            <element signature="e#7038#7119#0" expanded="true" />
-            <element signature="e#7138#7231#0" expanded="true" />
-            <element signature="e#7250#7343#0" expanded="true" />
-            <element signature="e#7361#7461#0" expanded="true" />
-            <element signature="e#7480#7559#0" expanded="true" />
-            <element signature="e#7585#7725#0" expanded="true" />
-            <element signature="e#7755#8807#0" expanded="true" />
-            <element signature="e#7788#7840#0" expanded="true" />
-            <element signature="e#7876#8099#0" expanded="true" />
-            <element signature="e#8147#8193#0" expanded="true" />
-            <element signature="e#8232#8268#0" expanded="true" />
-            <element signature="e#8303#8312#0" expanded="true" />
-            <element signature="e#8345#8354#0" expanded="true" />
-            <element signature="e#8386#8533#0" expanded="true" />
-            <element signature="e#8569#8653#0" expanded="true" />
-            <element signature="e#8684#8801#0" expanded="true" />
-            <element signature="e#8749#8791#0" expanded="true" />
+            <element signature="e#948#1464#0" expanded="true" />
+            <element signature="e#998#1178#0" expanded="true" />
+            <element signature="e#1019#1168#0" expanded="true" />
+            <element signature="e#1197#1417#0" expanded="true" />
+            <element signature="e#1234#1304#0" expanded="true" />
+            <element signature="e#1342#1356#0" expanded="true" />
+            <element signature="e#1392#1406#0" expanded="true" />
+            <element signature="e#1446#1458#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/address.vue">
+    <entry file="file://$PROJECT_DIR$/src/page/activeManage/page1.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23183925">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="24" />
+        <state vertical-scroll-proportion="-11.538462">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
-            <element signature="e#894#1039#0" expanded="true" />
-            <element signature="e#961#1010#0" expanded="true" />
-            <element signature="e#1058#1667#0" expanded="true" />
-            <element signature="e#1102#1235#0" expanded="true" />
-            <element signature="e#1117#1229#0" expanded="true" />
-            <element signature="e#1251#1378#0" expanded="true" />
-            <element signature="e#1277#1372#0" expanded="true" />
-            <element signature="e#1391#1551#0" expanded="true" />
-            <element signature="e#1429#1471#0" expanded="true" />
-            <element signature="e#1500#1545#0" expanded="true" />
-            <element signature="e#1566#1661#0" expanded="true" />
-            <element signature="e#1600#1609#0" expanded="true" />
-            <element signature="e#1644#1653#0" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#516#526#0" expanded="true" />
+            <element signature="e#547#654#0" expanded="true" />
+            <element signature="e#580#648#0" expanded="true" />
+            <element signature="e#667#675#0" expanded="true" />
+            <element signature="e#702#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/activeManage/page4.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.948718">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-table#0;n#el-row#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-row#6;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-table#0;n#el-row#8;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-row#9;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#3429#5522#0" expanded="true" />
+            <element signature="e#3471#5161#0" expanded="true" />
+            <element signature="e#3486#5155#0" expanded="true" />
+            <element signature="e#3674#4295#0" expanded="true" />
+            <element signature="e#3675#3785#0" expanded="true" />
+            <element signature="e#3787#3897#0" expanded="true" />
+            <element signature="e#3909#4029#0" expanded="true" />
+            <element signature="e#4041#4161#0" expanded="true" />
+            <element signature="e#4173#4294#0" expanded="true" />
+            <element signature="e#4317#5147#0" expanded="true" />
+            <element signature="e#4318#4482#0" expanded="true" />
+            <element signature="e#4484#4648#0" expanded="true" />
+            <element signature="e#4650#4814#0" expanded="true" />
+            <element signature="e#4816#4980#0" expanded="true" />
+            <element signature="e#4982#5146#0" expanded="true" />
+            <element signature="e#5177#5473#0" expanded="true" />
+            <element signature="e#5210#5466#0" expanded="true" />
+            <element signature="e#5489#5497#0" expanded="true" />
+            <element signature="e#5510#5518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/activeManage/page2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5384616">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#el-row#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-row#1;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-table#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-row#2;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#2259#3345#0" expanded="true" />
+            <element signature="e#2305#3255#0" expanded="true" />
+            <element signature="e#2324#3245#0" expanded="true" />
+            <element signature="e#2402#3198#0" expanded="true" />
+            <element signature="e#2403#2561#0" expanded="true" />
+            <element signature="e#2562#2720#0" expanded="true" />
+            <element signature="e#2721#2879#0" expanded="true" />
+            <element signature="e#2880#3038#0" expanded="true" />
+            <element signature="e#3039#3197#0" expanded="true" />
+            <element signature="e#3327#3339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/activeManage/page3.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="76" column="9" selection-start-line="70" selection-start-column="8" selection-end-line="76" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#el-row#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-table#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-row#2;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#2376#2510#0" expanded="true" />
+            <element signature="e#2511#2645#0" expanded="true" />
+            <element signature="e#2646#2780#0" expanded="true" />
+            <element signature="e#2781#2915#0" expanded="true" />
+            <element signature="e#2916#3050#0" expanded="true" />
+            <element signature="e#3156#3164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/activeManage/page5.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.564102">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#el-row#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-table#0;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-row#1;n#el-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#2014#2877#0" expanded="true" />
+            <element signature="e#2057#2841#0" expanded="true" />
+            <element signature="e#2072#2835#0" expanded="true" />
+            <element signature="e#2116#2827#0" expanded="true" />
+            <element signature="e#2117#2258#0" expanded="true" />
+            <element signature="e#2259#2400#0" expanded="true" />
+            <element signature="e#2401#2542#0" expanded="true" />
+            <element signature="e#2543#2684#0" expanded="true" />
+            <element signature="e#2685#2826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/activePublic/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3076923">
+          <caret line="12" column="104" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="104" />
+          <folding>
+            <element signature="e#817#2114#0" expanded="true" />
+            <element signature="e#866#1007#0" expanded="true" />
+            <element signature="e#881#1001#0" expanded="true" />
+            <element signature="e#1022#2090#0" expanded="true" />
+            <element signature="e#1057#1093#0" expanded="true" />
+            <element signature="e#1128#1219#0" expanded="true" />
+            <element signature="e#1255#1408#0" expanded="true" />
+            <element signature="e#1443#1479#0" expanded="true" />
+            <element signature="e#1508#2084#0" expanded="true" />
+            <element signature="e#2102#2110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/activeManage/allActive.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#537#700#0" expanded="true" />
+            <element signature="e#592#694#0" expanded="true" />
+            <element signature="e#611#684#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044313148">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        <state vertical-scroll-proportion="-23.846153">
+          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47142857">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
-            <element signature="e#1330#1347#0" expanded="true" />
+            <element signature="e#762#1065#0" expanded="true" />
+            <element signature="e#817#1057#0" expanded="true" />
+            <element signature="e#1252#1547#0" expanded="true" />
+            <element signature="e#1316#1543#0" expanded="true" />
           </folding>
         </state>
       </provider>

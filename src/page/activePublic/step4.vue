@@ -1,12 +1,5 @@
 <template>
   <div class="step4">
-    <el-steps :space="200" :active="4" class="step">
-      <el-step title="活动信息" description=""></el-step>
-      <el-step title="报名签到" description=""></el-step>
-      <el-step title="分享设置" description=""></el-step>
-      <el-step title="个性设置" description=""></el-step>
-    </el-steps>
-
     <el-form label-position="top" :model="form" class="demo-form-stacked">
       <el-form-item label="消息推送">
           <el-row>
@@ -242,11 +235,6 @@
           <el-radio :label="1">不配置</el-radio>
           <el-radio :label="2">配置</el-radio>
         </el-radio-group>
-      </el-form-item>
-
-      <el-form-item>
-        <el-button><router-link to="/step3"  class="router-link">上一步</router-link></el-button>
-        <el-button  type="primary"><router-link to=""  class="router-link">发布活动</router-link></el-button>
       </el-form-item>
     </el-form>
 

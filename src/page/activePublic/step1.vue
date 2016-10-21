@@ -1,14 +1,5 @@
 <template>
     <div class="step1">
-      <el-steps :space="200" :active="1" class="step">
-        <el-step title="活动信息" description=""></el-step>
-        <el-step title="报名签到" description=""></el-step>
-        <el-step title="分享设置" description=""></el-step>
-        <el-step title="个性设置" description=""></el-step>
-      </el-steps>
-
-
-
       <el-form :model="ruleForm" class="demo-ruleForm demo-form-stacked" :rules="rules" ref="ruleForm"  label-position="top">
         <el-form-item label="活动名称" prop="name">
           <el-input v-model="ruleForm.name" size="large"></el-input>
@@ -134,12 +125,7 @@
           </el-input>
         </el-form-item>
 
-
-        <el-form-item>
-          <el-button @click.native.prevent>预览</el-button>
-          <el-button type="primary"><router-link to="/step2"  class="router-link">下一步</router-link></el-button>
-        </el-form-item>
-      </el-form>
+        </el-form>
 
       <!-- 弹框 -->
       <el-dialog title="添加活动标签" v-model="dialogFormVisible" top="35%">

@@ -1,13 +1,6 @@
 <template>
   <div class="step2">
 
-    <el-steps :space="200" :active="2" class="step">
-      <el-step title="活动信息" description=""></el-step>
-      <el-step title="报名签到" description=""></el-step>
-      <el-step title="分享设置" description=""></el-step>
-      <el-step title="个性设置" description=""></el-step>
-    </el-steps>
-
     <el-form ref="form" :model="form" label-position="top" @submit.prevent="onSubmit">
 
       <el-form-item label="报名限制" prop="">
@@ -130,10 +123,7 @@
           </el-col>
       </el-form-item>
 
-      <el-form-item>
-        <el-button><router-link to="/step1"  class="router-link">上一步</router-link></el-button>
-        <el-button  type="primary"><router-link to="/step3"  class="router-link">下一步</router-link></el-button>
-      </el-form-item>
+
     </el-form>
   </div>
 </template>

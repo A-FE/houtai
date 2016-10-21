@@ -1,13 +1,5 @@
 <template>
   <div class="step3">
-
-    <el-steps :space="200" :active="3" class="step">
-      <el-step title="活动信息" description=""></el-step>
-      <el-step title="报名签到" description=""></el-step>
-      <el-step title="分享设置" description=""></el-step>
-      <el-step title="个性设置" description=""></el-step>
-    </el-steps>
-
     <el-form label-position="top" :model="form" class="demo-form-stacked">
       <el-form-item label="分享标题">
         <el-input v-model="form.title"></el-input>
@@ -29,10 +21,7 @@
         </el-upload>
       </el-form-item>
 
-      <el-form-item>
-        <el-button><router-link to="/step2"  class="router-link" style="color: #333;">上一步</router-link></el-button>
-        <el-button  type="primary"><router-link to="/step4"  class="router-link">下一步</router-link></el-button>
-      </el-form-item>
+
     </el-form>
   </div>
   </template>

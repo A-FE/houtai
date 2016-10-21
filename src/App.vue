@@ -17,8 +17,8 @@
           <!-- 左侧导航 -->
           <el-col :span="5">
               <el-menu default-active="1" class="el-menu-vertical-demo" @open="" @close="">
-                  <el-menu-item index="1"><router-link to="/step1" class="router-link">活动发布</router-link></el-menu-item>
-                  <el-menu-item index="2" ><router-link to="/index"  class="router-link">活动管理</router-link></el-menu-item>
+                  <el-menu-item index="1"><router-link to="/activePublic" class="router-link">活动发布</router-link></el-menu-item>
+                  <el-menu-item index="2" ><router-link to="/activeManage"  class="router-link">活动管理</router-link></el-menu-item>
               </el-menu>
           </el-col>
 
