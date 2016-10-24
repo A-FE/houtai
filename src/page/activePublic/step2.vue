@@ -5,21 +5,21 @@
 
       <el-form-item label="报名限制" prop="">
           <el-radio-group v-model="form.joinLimit">
-              <el-radio :label="1">无限制</el-radio>
-              <el-radio :label="2">必须关注公众号才能报名</el-radio>
-              <el-radio :label="3">必须成为会员才能报名</el-radio>
-              <el-radio :label="4">必须分享才能报名</el-radio>
+              <el-radio  label="无限制" ></el-radio>
+              <el-radio  label="必须关注公众号才能报名"></el-radio>
+              <el-radio  label="必须成为会员才能报名"></el-radio>
+              <el-radio  label="必须分享才能报名"></el-radio>
           </el-radio-group>
         </el-form-item>
 
       <el-form-item label="每人可报名额限制" prop="">
         <el-row>
           <el-col :span="6">
-            <el-radio class="radio" v-model="form.numLimit" label="1">无限制</el-radio>
-            <el-radio class="radio" v-model="form.numLimit" label="2">限制</el-radio>
+            <el-radio class="radio" v-model="form.numLimit"  label="无限制" ></el-radio>
+            <el-radio class="radio" v-model="form.numLimit"  label="限制"></el-radio>
           </el-col>
           <el-col :span="6">
-            <el-input placeholder="0" :number="true" size="large" v-model="form.numLimitDetail"><template slot="append">人</template></el-input>
+            <el-input placeholder="0" :number="true" size="large" v-model="form.numLimitDetail" :disabled=" form.numLimit == '无限制' "><template slot="append">人</template></el-input>
           </el-col>
         </el-row>
       </el-form-item>
@@ -27,11 +27,11 @@
       <el-form-item label="付费活动" prop="">
         <el-row>
           <el-col :span="6">
-            <el-radio class="radio" v-model="form.cost" label="1">免费</el-radio>
-            <el-radio class="radio" v-model="form.cost" label="2">费用</el-radio>
+            <el-radio class="radio" v-model="form.cost" label="免费" ></el-radio>
+            <el-radio class="radio" v-model="form.cost" label="费用"></el-radio>
           </el-col>
           <el-col :span="6">
-            <el-input placeholder="0" :number="true" size="large" v-model="form.costDetail"><template slot="append">元</template></el-input>
+            <el-input placeholder="0" :number="true" size="large" v-model="form.costDetail" :disabled="form.cost == '免费'"><template slot="append">元</template></el-input>
           </el-col>
         </el-row>
       </el-form-item>
@@ -39,11 +39,11 @@
       <el-form-item label="允许取消报名" prop="">
         <el-row>
           <el-col :span="6">
-            <el-radio class="radio" v-model="form.cancel" label="1">不允许</el-radio>
-            <el-radio class="radio" v-model="form.cancel" label="2">允许</el-radio>
+            <el-radio class="radio" v-model="form.cancel"  label="不允许" ></el-radio>
+            <el-radio class="radio" v-model="form.cancel"  label="允许"></el-radio>
           </el-col>
           <el-col :span="6">
-            <el-input placeholder="活动前几小时"  size="large" v-model="form.costDetail"><template slot="append">小时</template></el-input>
+            <el-input placeholder="活动前几小时"  size="large" v-model="form.costDetail" :disabled="form.cancel == '不允许'"><template slot="append">小时</template></el-input>
           </el-col>
         </el-row>
       </el-form-item>
@@ -51,8 +51,8 @@
       <el-form-item label="报名是否需要审核" prop="">
         <el-row>
           <el-col :span="6">
-            <el-radio class="radio" v-model="form.audit" label="1">不需要</el-radio>
-            <el-radio class="radio" v-model="form.audit" label="2">需要</el-radio>
+            <el-radio class="radio" v-model="form.audit"  label="不需要" ></el-radio>
+            <el-radio class="radio" v-model="form.audit"  label="需要"></el-radio>
           </el-col>
         </el-row>
       </el-form-item>
@@ -90,30 +90,30 @@
       <el-form-item label="签到条件" prop="">
         <el-row>
           <el-col :span="24">
-            <el-radio class="radio" v-model="form.sign" label="1">必须报名</el-radio>
-            <el-radio class="radio" v-model="form.sign" label="2">不需要报名</el-radio>
+            <el-radio class="radio" v-model="form.sign" label="必须报名"></el-radio>
+            <el-radio class="radio" v-model="form.sign" label="不需要报名"></el-radio>
           </el-col>
         </el-row>
       </el-form-item>
 
       <el-form-item label="签到方式" prop="">
         <el-row>
-          <el-col :span="16">
+          <el-col :span="19">
             <el-radio-group v-model="form.signType">
-              <el-radio :label="1">签到二维码</el-radio>
-              <el-radio :label="2">入场二维码</el-radio>
-              <el-radio :label="3">会员二位码</el-radio>
-              <el-radio :label="4">手机号</el-radio>
-              <el-radio :label="5">暗号</el-radio>
+              <el-radio  label="签到二维码"></el-radio>
+              <el-radio  label="入场二维码"></el-radio>
+              <el-radio  label="会员二位码"></el-radio>
+              <el-radio  label="手机号"></el-radio>
+              <el-radio  label="暗号"></el-radio>
             </el-radio-group>
           </el-col>
           <el-col :span="5" :pull="2">
-              <el-input v-model="form.secretCode"  placeholder="请填写您的暗号"  size="large"></el-input>
+              <el-input :disabled="form.signType != '暗号'" v-model="form.secretCode"  placeholder="请填写您的暗号"  size="large"></el-input>
           </el-col>
         </el-row>
       </el-form-item>
 
-      <el-form-item label="生成签到二维码">
+      <el-form-item label="生成签到二维码" v-show="form.signType == '签到二维码'">
           <el-col :span="4">
               <img width="100" height="100" :src="imgUrl">
           </el-col>
@@ -134,24 +134,24 @@
     return {
       imgUrl:'',
       form: {
-          joinLimit:1,
-          numLimit:1,
+          joinLimit:'',
+          numLimit:'',
           numLimitDetail:'',
-          cost:'1',
+          cost:'',
           costDetail:'',
-          cancel: 1,
-          audit: 1,
+          cancel: '',
+          audit: '',
           needName: true,
           name:'',
           needTel: true,
           tel: '',
-          sign: '1',
+          sign: '',
           signType: '',
           secretCode: ''
       }
     }
   },
-  methods: {
+    methods: {
     onSubmit: function (){
       console.log('submit!');
     }

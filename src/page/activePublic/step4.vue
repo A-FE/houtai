@@ -100,37 +100,37 @@
       <el-form-item label="微信提醒">
           <el-row :gutter="20">
               <el-col :span="7">
-                  <el-radio class="radio" v-model="form.remind" label="1" >不提醒</el-radio>
-                  <el-radio class="radio" v-model="form.remind" label="2">提醒</el-radio>
+                  <el-radio class="radio" v-model="form.remind" label="不提醒"></el-radio>
+                  <el-radio class="radio" v-model="form.remind" label="提醒"></el-radio>
               </el-col>
-              <el-col :span="3">
-                  <el-select v-model="form.remindTime">
+              <el-col :span="4">
+                  <el-select  :disabled="form.remind != '提醒'" v-model="form.remindTime" placeholder="提前几小时">
                       <el-option
                         v-for="n of 24"
                         :value="n"></el-option>
                   </el-select>
               </el-col>
               <el-col :span="10">
-                  <el-input placeholder="请填写您的微信提醒" size="" v-model="form.remindText"></el-input>
+                  <el-input placeholder="请填写您的微信提醒" :disabled="form.remind != '提醒'" v-model="form.remindText"></el-input>
               </el-col>
           </el-row>
       </el-form-item>
 
-      <el-form-item label="活动报名使用积分">
+      <el-form-item label="">
         <el-row>
-          <div class="el-form-item__label"> 配置截屏分享图片</div>
+          <div class="el-form-item__label"> 活动报名使用积分</div>
           <el-col  class="el-form-item__label is-active" :span="4">
             <el-button type="text" @click.native="showMeg(1)">了解积分规则</el-button>
           </el-col>
         </el-row>
         <el-row :gutter="20">
           <el-col :span="7">
-            <el-radio class="radio" v-model="form.useScore" label="1" >不使用</el-radio>
-            <el-radio class="radio" v-model="form.useScore" label="2">使用</el-radio>
+            <el-radio class="radio" v-model="form.useScore" label="不使用" ></el-radio>
+            <el-radio class="radio" v-model="form.useScore" label="使用"></el-radio>
           </el-col>
 
           <el-col :span="7">
-            <el-input placeholder="0" size="large" :number="true" v-model="form.useScoreNum"><template slot="append">积分</template></el-input>
+            <el-input placeholder="0" :disabled="form.useScore != '使用'" size="large" :number="true" v-model="form.useScoreNum"><template slot="append">积分</template></el-input>
           </el-col>
         </el-row>
       </el-form-item>
@@ -138,24 +138,24 @@
       <el-form-item label="活动报名获得积分">
         <el-row :gutter="20">
           <el-col :span="7">
-            <el-radio class="radio" v-model="form.signUpScore" label="1" >无积分</el-radio>
-            <el-radio class="radio" v-model="form.signUpScore" label="2">获得积分</el-radio>
+            <el-radio class="radio" v-model="form.signUpScore" label="无积分" ></el-radio>
+            <el-radio class="radio" v-model="form.signUpScore" label="获得积分"></el-radio>
           </el-col>
 
           <el-col :span="7">
-            <el-input placeholder="0" size="large" :number="true" v-model="form.signUpScoreNum"><template slot="append">积分</template></el-input>
+            <el-input placeholder="0"  :disabled="form.signUpScore != '获得积分'" size="large" :number="true" v-model="form.signUpScoreNum"><template slot="append">积分</template></el-input>
           </el-col>
         </el-row>
       </el-form-item>
       <el-form-item label="分享活动获得积分">
         <el-row :gutter="20">
           <el-col :span="7">
-            <el-radio class="radio" v-model="form.shareScore" label="1" >无积分</el-radio>
-            <el-radio class="radio" v-model="form.shareScore" label="2">获得积分</el-radio>
+            <el-radio class="radio" v-model="form.shareScore" label="无积分" ></el-radio>
+            <el-radio class="radio" v-model="form.shareScore" label="获得积分"></el-radio>
           </el-col>
 
           <el-col :span="7">
-            <el-input placeholder="0" size="large" :number="true" v-model="form.shareScoreNum"><template slot="append">积分</template></el-input>
+            <el-input placeholder="0" :disabled="form.shareScore != '获得积分'"  size="large" :number="true" v-model="form.shareScoreNum"><template slot="append">积分</template></el-input>
           </el-col>
         </el-row>
       </el-form-item>
@@ -163,18 +163,18 @@
       <el-form-item label="分享后每个阅读量获得积分">
         <el-row :gutter="20">
           <el-col :span="7">
-            <el-radio class="radio" v-model="form.shareReadScore" label="1" >无积分</el-radio>
-            <el-radio class="radio" v-model="form.shareReadScore" label="2">获得积分</el-radio>
+            <el-radio class="radio" v-model="form.shareReadScore" label="无积分" ></el-radio>
+            <el-radio class="radio" v-model="form.shareReadScore" label="获得积分"></el-radio>
           </el-col>
 
           <el-col :span="7">
-            <el-input placeholder="0" size="large" :number="true" v-model="form.shareReadScoreNum"><template slot="append">积分</template></el-input>
+            <el-input placeholder="0" :disabled="form.shareReadScore != '获得积分'" size="large" :number="true" v-model="form.shareReadScoreNum"><template slot="append">积分</template></el-input>
           </el-col>
           <el-col :span="2" style="line-height: 42px;text-align: right;">
               上限
           </el-col>
           <el-col :span="7">
-            <el-input placeholder="0" size="large" :number="true" v-model="form.shareReadScoreNumMax"><template slot="append">积分</template></el-input>
+            <el-input placeholder="0"  :disabled="form.shareReadScore != '获得积分'"  size="large" :number="true" v-model="form.shareReadScoreNumMax"><template slot="append">积分</template></el-input>
           </el-col>
         </el-row>
       </el-form-item>
@@ -182,46 +182,60 @@
       <el-form-item label="分享后好友报名获得积分">
         <el-row :gutter="20">
           <el-col :span="7">
-            <el-radio class="radio" v-model="form.shareSignUp" label="1" checked>无积分</el-radio>
-            <el-radio class="radio" v-model="form.shareSignUp" label="2">获得积分</el-radio>
+            <el-radio class="radio" v-model="form.shareSignUp" label="无积分" checked></el-radio>
+            <el-radio class="radio" v-model="form.shareSignUp" label="获得积分"></el-radio>
           </el-col>
 
           <el-col :span="7">
-            <el-input placeholder="0" size="large" :number="true" v-model="form.shareSignUpNum"><template slot="append">积分</template></el-input>
+            <el-input placeholder="0" size="large" :disabled ="form.shareSignUp != '获得积分'" :number="true" v-model="form.shareSignUpNum"><template slot="append">积分</template></el-input>
           </el-col>
           <el-col :span="2" style="line-height: 42px;text-align: right;">
             上限
           </el-col>
           <el-col :span="7">
-            <el-input placeholder="0" size="large" :number="true" v-model="form.shareSignUpNumMax"><template slot="append">积分</template></el-input>
+            <el-input placeholder="0" size="large" :disabled ="form.shareSignUp != '获得积分'"  :number="true" v-model="form.shareSignUpNumMax"><template slot="append">积分</template></el-input>
           </el-col>
         </el-row>
       </el-form-item>
 
       <el-form-item label="用户分享后，页面跳转至">
-          <el-radio-group v-model="form.afterShare">
-            <el-radio :label="1">不跳转</el-radio>
-            <el-radio :label="2">图文库</el-radio>
-            <el-radio :label="3">活动库</el-radio>
-            <el-radio :label="4">问卷库</el-radio>
-            <el-radio :label="5">试卷库</el-radio>
-            <el-radio :label="6">大转盘</el-radio>
-            <el-radio :label="7">砸金蛋</el-radio>
-            <el-radio :label="8">自定义链接</el-radio>
-          </el-radio-group>
+            <el-radio-group v-model="form.afterShare">
+              <el-radio label="不跳转"></el-radio>
+              <el-radio label="图文库"></el-radio>
+              <el-radio label="活动库"></el-radio>
+              <el-radio label="问卷库"></el-radio>
+              <el-radio label="试卷库"></el-radio>
+              <el-radio label="大转盘"></el-radio>
+              <el-radio label="砸金蛋"></el-radio>
+              <el-radio label="自定义链接"></el-radio>
+            </el-radio-group>
+
+            <el-input
+              v-show="form.afterShare == '自定义链接'"
+              placeholder="请输入自定义链接"
+              v-model="form.afterShareLink">
+            </el-input>
       </el-form-item>
 
-      <el-form-item label="用户分享后，页面跳转至">
+      <el-form-item label="用户报名后，页面跳转至">
+
         <el-radio-group v-model="form.afterSingUp">
-          <el-radio :label="1">不跳转</el-radio>
-          <el-radio :label="2">图文库</el-radio>
-          <el-radio :label="3">活动库</el-radio>
-          <el-radio :label="4">问卷库</el-radio>
-          <el-radio :label="5">试卷库</el-radio>
-          <el-radio :label="6">大转盘</el-radio>
-          <el-radio :label="7">砸金蛋</el-radio>
-          <el-radio :label="8">自定义链接</el-radio>
+          <el-radio  label="不跳转"></el-radio>
+          <el-radio  label="图文库"></el-radio>
+          <el-radio  label="活动库"></el-radio>
+          <el-radio  label="问卷库"></el-radio>
+          <el-radio  label="试卷库"></el-radio>
+          <el-radio  label="大转盘"></el-radio>
+          <el-radio  label="砸金蛋"></el-radio>
+          <el-radio  label="自定义链接"></el-radio>
         </el-radio-group>
+
+        <el-input
+          v-show="form.afterSingUp == '自定义链接'"
+          placeholder="请输入自定义链接"
+          v-model="form.afterSingUpLink">
+        </el-input>
+
       </el-form-item>
 
       <el-form-item label="">
@@ -232,8 +246,8 @@
           </el-col>
         </el-row>
         <el-radio-group v-model="form.shareImg">
-          <el-radio :label="1">不配置</el-radio>
-          <el-radio :label="2">配置</el-radio>
+          <el-radio  label="不配置"></el-radio>
+          <el-radio  label="配置"></el-radio>
         </el-radio-group>
       </el-form-item>
     </el-form>
@@ -248,6 +262,9 @@
 
   </div>
 </template>
+
+
+
 <script>
 
     const template1 = `<span style="font-size: 16px;line-height: 1.6em;">
@@ -294,7 +311,9 @@
              shareSignUpNum:'',
              shareSignUpNumMax:'',
              afterShare:'',
+             afterShareLink:'',
              afterSingUp:'',
+             afterSingUpLink:'',
              shareImg:'',
              shareImgUrl:''
            }
@@ -312,6 +331,6 @@
 <style>
   .step4 .router-link{color:#333;}
   .step4 .el-button-primary .router-link{color:#fff;}
-  .el-form-item .el-button+.el-button, .el-form-item .el-checkbox+.el-checkbox, .el-form-item .el-radio+.el-radio{margin-left: 30px;}
-  .is-active{color: #20a0ff;cursor: pointer;}
+  .step4 .is-active{color: #20a0ff;cursor: pointer;}
+
 </style>

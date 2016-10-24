@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="page4">
     <p style="font-size: 15px;">数据统计时间: 活动发布时间 {{ activePublishTime }} ——至今</p>
     <el-row type="flex" align="middle">
@@ -113,10 +112,7 @@
     </el-row>
 
 
-=======
-  <div class="page1">
-    数据统计
->>>>>>> origin/master
+
   </div>
 </template>
 
@@ -126,7 +122,6 @@
     name:'page4',
     data: function () {
       return {
-<<<<<<< HEAD
         activePublishTime:'2016-09-12',
         readNum: 1000,
         readPersonNum: 300,
@@ -217,30 +212,16 @@
 
     },
     watch: {
-=======
 
-      }
-    },
-    methods: function () {
-
-    },
-    watch: function () {
->>>>>>> origin/master
 
     }
   }
 
-<<<<<<< HEAD
 
 </script>
 
 <style>
   .square{width: 140px;height: 140px; border: solid 1px #20a0ff; text-align: center;border-radius: 6px;padding: 40px 0;box-sizing: border-box;}
   .square p{color: #999;}
-=======
-</script>
 
-<style>
-
->>>>>>> origin/master
 </style>

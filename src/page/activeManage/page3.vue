@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="page3">
     <el-card class="box-card">
       <el-row :gutter="20" align="middle" type="flex" justify="end" style="margin-bottom: 20px;">
@@ -58,16 +57,12 @@
         </el-col>
       </el-row>
     </el-card>
-=======
-  <div class="page1">
-    签到
->>>>>>> origin/master
+
   </div>
 </template>
 
 <script>
 
-<<<<<<< HEAD
   export default {
     name:'page3',
     data: function () {
@@ -115,29 +110,11 @@
 
     }
   }
-=======
-    export default {
-        name:'page3',
-        data: function () {
-            return {
 
-            }
-        },
-        methods: function () {
-
-        },
-        watch: function () {
-
-        }
-    }
->>>>>>> origin/master
 
 </script>
 
 <style>
-<<<<<<< HEAD
   .page3 .el-row{margin-bottom: 20px;}
-=======
 
->>>>>>> origin/master
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div class="page2">
-<<<<<<< HEAD
       <el-card class="box-card">
         <el-row :gutter="20" align="middle" type="flex" justify="end" style="margin-bottom: 20px;">
           <el-col :span="3">
@@ -55,9 +54,7 @@
           </el-pagination>
     </el-row>
     </el-card>
-=======
-    报名管理
->>>>>>> origin/master
+
   </div>
 </template>
 
@@ -67,7 +64,6 @@
       name:'page2',
       data: function () {
           return {
-<<<<<<< HEAD
             searchText:'',
             chooseNum: 0,
             tableData: [{
@@ -102,9 +98,7 @@
               note:'喳喳'
             }],
             multipleSelection: []
-=======
 
->>>>>>> origin/master
           }
         },
         methods: function () {
