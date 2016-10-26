@@ -7,11 +7,11 @@
 
         <el-form-item label="" prop="fenLei">
           <el-row style="height: 35px;" type="flex" align="middle">
-            <el-col :span="3">
+            <el-col :span="3" style="width: 90px;">
               <div class="el-form-item__label" style="padding-bottom: 0;"> 活动分类</div>
             </el-col>
             <el-col  class="" :span="2">
-              <el-button type="text" @click.native="dialogFormFenLeiVisible = true">设置</el-button>
+              <el-button type="text" @click.native="dialogFormFenLeiVisible = true" style="margin: 0;padding: 0;">设置</el-button>
             </el-col>
           </el-row>
           <el-radio-group v-model="ruleForm.fenLei" >
@@ -28,13 +28,13 @@
                >
               {{tag.name}}
             </el-tag>
-          <el-button icon="plus" size="large" @click.native="showDialog"></el-button>
+          <el-button icon="plus" size="large" @click.native="showDialog" style="vertical-align: middle;margin: 10px;"></el-button>
           <transition name="fade">
             <div class="el-form-item__error" v-show="tagsValid">{{ tagsError }}</div>
           </transition>
         </el-form-item>
 
-        <el-form-item label="活动时间" required>
+        <el-form-item label="活动时间" required style="width: 750px;">
           <el-col :span="5">
             <el-form-item prop="activeStartTimeDate">
               <el-date-picker
@@ -80,7 +80,7 @@
 
         </el-form-item>
 
-        <el-form-item label="报名时间" required>
+        <el-form-item label="报名时间" required style="width: 750px;">
           <el-col :span="5">
               <el-form-item prop="signStartTimeDate">
                 <el-date-picker
@@ -125,7 +125,7 @@
         </el-form-item>
 
 
-        <el-form-item label="活动地点" required>
+        <el-form-item label="活动地点" required >
             <address-select
               :province="ruleForm.province"
               :city="ruleForm.city"
@@ -136,7 +136,7 @@
 
         <el-form-item label="活动人数">
           <el-row>
-          <el-col :span="6">
+          <el-col :span="6" style="width: 187px;">
             <el-radio class="radio" v-model="ruleForm.activePerson" label="无限制">无限制</el-radio>
             <el-radio class="radio" v-model="ruleForm.activePerson" label="限制">限制</el-radio>
           </el-col>
@@ -221,7 +221,7 @@
         </el-form>
 
       <!-- 弹框 -->
-      <el-dialog title="添加活动标签" size="tiny" v-model="dialogFormVisible" top="35%">
+      <el-dialog title="添加活动标签"  v-model="dialogFormVisible" top="35%">
         <el-form :model="dialogForm">
           <el-form-item>
             <el-input v-model="dialogForm.name" auto-complete="off" ></el-input>
@@ -234,7 +234,7 @@
       </el-dialog>
 
       <!-- 设置活动分类 -->
-      <el-dialog title="设置活动分类" v-model="dialogFormFenLeiVisible">
+      <el-dialog title="设置活动分类" v-model="dialogFormFenLeiVisible" >
         <el-form :model="dialogFormFenLei">
           <el-form-item>
             <el-tag
@@ -279,20 +279,22 @@
         dialogFormFenLeiVisible:false,
         dialogForm:{name:''},
         dialogFormFenLei:{name:''},
+        ruleFormChange:false,
+        ruleFormValid:false,
         rules: {
           name:[
-            {required:true,message:'请输入活动名称',trigger:'blur'}
+            {required:true,message:'请输入活动名称',trigger:'change'}
           ],
           fenLei:[
             {required:true,message:'请选择活动分类',trigger:'change'}
           ],
-          activeStartTimeDate: [{type:'date',required:true,message:'请选择活动开始日期',trigger:'change'}],
+          activeStartTimeDate: [{required:true,message:'请选择活动开始日期',trigger:'change'}],
           activeStartTimeTime: [{required:true,message:'请选择活动开始时间',trigger:'change'}],
-          activeEndTimeDate:   [{type:'date',required:true,message:'请选择活动结束日期',trigger:'change'}],
+          activeEndTimeDate:   [{required:true,message:'请选择活动结束日期',trigger:'change'}],
           activeEndTimeTime:   [{required:true,message:'请选择活动结束时间',trigger:'change'}],
-          signStartTimeDate:   [{type:'date',required:true,message:'请选择报名开始日期',trigger:'change'}],
+          signStartTimeDate:   [{required:true,message:'请选择报名开始日期',trigger:'change'}],
           signStartTimeTime:   [{required:true,message:'请选择报名开始时间',trigger:'change'}],
-          signEndTimeDate:     [{type:'date',required:true,message:'请选择报名截止日期',trigger:'change'}],
+          signEndTimeDate:     [{required:true,message:'请选择报名截止日期',trigger:'change'}],
           signEndTimeTime:     [{required:true,message:'请选择报名截止时间',trigger:'change'}],
         },
         ruleForm: {
@@ -327,7 +329,8 @@
       ruleForm: {
         handler: function (val,oldVal) {
           store.commit('setRuleForm',this.ruleForm);
-          this.tagsValid = this.ruleForm.tags.length ? false :'' ;
+          this.tagsValid = !this.ruleForm.tags.length ? '' :false ;
+          this.ruleFormChange = true ;
         },
         deep: true
       }
@@ -401,20 +404,25 @@
 
     },
     created: function(){
-      Object.assign(this.ruleForm, store.state.ruleForm);
+        Object.assign(this.ruleForm, store.state.ruleForm);
+        var _this = this;
+        setTimeout(function () {
+            _this.ruleFormChange = false ;
+        })
     },
-    beforeRouteLeave: function (to, from, next) {
-      if(from.fullPath == '/activePublic/step2'){
+      beforeRouteLeave: function (to, from, next) {
+      if(to.path == '/activePublic/step2'){
         this.isAddressTrue = true ;
-        this.tagsValid = this.ruleForm.tags.length ? false :true ;
+        this.tagsValid = !this.ruleForm.tags.length ? true :false ;
         this.$refs.ruleForm.validate((valid) => {
           valid ? next() : next(false);
         }) ;
-      }else if(this.ruleForm){
+      }else if(this.ruleFormChange){
         this.$confirm('活动发布尚未完成，是否确定离开?', '提示', {
           type: 'warning'
         }).then(() =>{
-          next();
+              this.ruleFormChange = false;
+              next();
         }).catch(() => {
 
         })
@@ -437,11 +445,13 @@
     /* 标签 */
     .step1   .el-tag{padding: 10px 15px;margin:10px;vertical-align: middle;}
     .step1   .el-tag:first-child{margin-left: 0;}
-    .step1   .el-button{vertical-align: middle;margin: 10px;}
 
     /* 对话框 */
+    .step1 .el-dialog--small{width: 564px;}
     .step1 .el-dialog__body{padding-bottom: 0;}
     .step1 .el-dialog__body .el-form-item{margin-bottom: 10px;}
+    .step1 .el-dialog__wrapper  .el-button{margin-left: 15px;}
+
 
    /* 时间选择器 */
     .step1 .el-date-editor{width:150px;}

@@ -7,14 +7,16 @@
         <el-step title="个性设置" description=""></el-step>
       </el-steps>
 
+      <transition name="fade">
         <router-view class="view"></router-view>
+      </transition>
 
-      <div class="but-group">
-      <el-button @click.native.prevent="handlePreview"  v-show="preview">预览</el-button>
-      <el-button @click.native.prevent="handlePreStep"  v-show="preStep">上一步</el-button>
-      <el-button @click.native.prevent="handleNextStep" v-show="nextStep" type="primary">下一步</el-button>
-      <el-button @click.native.prevent="handlePublish"  v-show="publish" type="primary">发布活动</el-button>
-      </div>
+        <div class="but-group">
+          <el-button @click.native.prevent="handlePreview" v-show="preview">预览</el-button>
+          <el-button @click.native.prevent="handlePreStep" v-show="preStep">上一步</el-button>
+          <el-button @click.native.prevent="handleNextStep" v-show="nextStep" type="primary">下一步</el-button>
+          <el-button @click.native.prevent="handlePublish" v-show="publish" type="primary">发布活动</el-button>
+        </div>
     </div>
 </template>
 
@@ -26,6 +28,7 @@
     name:'activePublic',
     data: function () {
       return {
+          isRouter:false,
         preview: true,
         preStep: false,
         nextStep: true,
@@ -38,17 +41,22 @@
         console.log('预览');
       },
       handlePreStep: function () {
-        this.step--;
-        this.goStep(this.step);
-        this.$router.go(-1);
-        $(window).scrollTop(0);
+            this.$router.go(-1);
+            this.step--;
+            this.goStep(this.step);
+          $('html,body').animate({scrollTop:0},500);
       },
       handleNextStep: function () {
-        this.step++;
-        this.goStep(this.step);
-        this.$router.push('/activePublic/step'+this.step);
-        $(window).scrollTop(0);
-        console.log("下一步",store.state.ruleForm)
+          this.$router.push('/activePublic/step'+(this.step+1));
+          var _this = this;
+          setTimeout(function () {
+              if(_this.isRouter){
+                  _this.step++;
+                  _this.goStep(_this.step);
+              }
+          })
+        $('html,body').animate({scrollTop:0},500);
+
       },
       handlePublish: function () {
         console.log('发布');
@@ -71,7 +79,9 @@
       }
     },
     watch:{
-
+        '$route': function (to,from) {
+            this.isRouter = true;
+        }
     }
   }
 

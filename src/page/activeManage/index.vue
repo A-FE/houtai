@@ -11,8 +11,8 @@
           <span>报名总数</span>
         </el-col>
         <el-col :span="8" style="border: none;">
-          {{ totalActiveNum }}<br>
-          <span>活动总数</span>
+          {{ auditNum }}<br>
+          <span>待审核</span>
         </el-col>
       </el-col>
 
@@ -46,7 +46,7 @@
 
       <el-table :data="tableData" selection-mode="multiple" style="width: 100%" @selectionchange="" @cellclick="handleSelect" :custom-criteria="['$info', '$positive']" :custom-background-colors="['#C9E5F5', '#E2F0E4']">
         <el-table-column type="selection" width="50"></el-table-column>
-        <el-table-column property="name"  label="活动名称" ></el-table-column>
+        <el-table-column property="title"  label="活动名称" ></el-table-column>
         <el-table-column property="type" label="活动分类"></el-table-column>
         <el-table-column property="status" label="活动状态"></el-table-column>
         <el-table-column property="readNum" label="浏览数"></el-table-column>
@@ -78,9 +78,10 @@
     name: 'allActive',
     data: function () {
       return {
-        totalActiveNum: 3,
-        totalSignUp: 204,
-        activeNum: 0,
+          totalActiveNum: 3,
+          totalSignUp: 204,
+          auditNum:15,
+          activeNum: 0,
         selectActive: '',
         options: [{
           value: '测试活动'
@@ -89,28 +90,28 @@
             value: '**活动'
           }],
         tableData: [{
-          name: '王小虎',
+          title: '王小虎',
           type:'测试活动',
           status:'已结束',
           readNum:200,
           signUpNum:100,
           auditNum:100
         },{
-          name: '王小虎',
+          title: '王小虎',
           type:'测试活动',
           status:'已结束',
           readNum:200,
           signUpNum:100,
           auditNum:100
         },{
-          name: '王小虎',
+          title: '王小虎',
           type:'测试活动',
           status:'已结束',
           readNum:200,
           signUpNum:100,
           auditNum:100
         },{
-          name: '王小虎',
+          title: '王小虎',
           type:'测试活动',
           status:'已结束',
           readNum:200,

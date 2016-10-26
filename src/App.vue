@@ -17,20 +17,20 @@
     <div v-show="headerFixed" style="position: relative;height: 60px;width: 100%;"></div>
 
     <main>
-      <el-row :gutter="20" style="margin-left: 0;">
           <!-- 左侧导航 -->
-        <el-col :span="4" style="text-align: center;">
-          <el-menu default-active="/activePublic" class="el-menu-vertical-demo" @open="" @close="" :router="true">
-            <el-menu-item index="/activePublic">活动发布</el-menu-item>
-            <el-menu-item index="/activeManage" >活动管理</el-menu-item>
+        <div class="main-left">
+          <el-menu default-active="/activePublic" class="el-menu-vertical-demo" :router="true">
+            <el-menu-item index="/activePublic" :class="{'isActive': active}">活动发布</el-menu-item>
+            <el-menu-item index="/activeManage" :class="{'isActive': !active}">活动管理</el-menu-item>
           </el-menu>
-        </el-col>
+        </div>
 
           <!-- 右侧主内容区 -->
-          <el-col :span="20" class="main-right" >
+          <div  class="main-right" >
+            <transition name="fade">
               <router-view class="view"></router-view>
-          </el-col>
-      </el-row>
+            </transition>
+          </div>
     </main>
   </div>
 </template>
@@ -48,6 +48,7 @@ export default {
   name: 'app',
   data: function (){
     return {
+      active:true,
       headerFixed : true
     }
   },
@@ -57,7 +58,15 @@ export default {
   methods: {
 
   },
-
+  watch: {
+     '$route': function (to,from) {
+         if(to.path == '/activePublic'){
+             this.active = true ;
+         }else if(to.path == '/activeManage'){
+             this.active = false ;
+         }
+     }
+  }
 }
 </script>
 
@@ -74,9 +83,10 @@ header.header-fixed{position: fixed;top: 0;left: 0;right: 0;}
 header .el-menu-demo{padding-left: 300px!important;}
 
 /* 主内容区 */
-main{  min-height: 800px;  border: solid 40px #E9ECF1;  background-color: #FCFCFC;  }
-main .main-right{  padding: 50px!important;  margin-left: 0;  padding-left: 70px!important;  background-color: #fff;  }
-main .el-menu{background-color: transparent!important;}
+  main{    display: -webkit-box;  display: -ms-flexbox;  display: flex;  min-height: 800px;  border: solid 40px #E9ECF1;  background-color: #FCFCFC;  }
+  main .main-left{text-align: center;width: 200px;float: left;}
+  main .main-right{-webkit-box-flex: 1;  -ms-flex: 1;  flex: 1;   background-color: #fff; padding: 50px 70px; }
+  main .el-menu{background-color: transparent!important;}
 
 /*  */
 .router-link{display:inline-block;width:100%;height:100%;text-align:center;color:#475669;text-decoration: none; }
@@ -88,10 +98,21 @@ main .el-menu{background-color: transparent!important;}
   }
   /* 路由切换动效 */
   .fade-enter-active, .fade-leave-active {
-    transition: opacity .5s
+    transition: all .5s;
   }
   .fade-enter, .fade-leave-active {
-    opacity: 0
+    opacity: 0;
   }
 
+  .list-enter-active, .list-leave-active {
+    transition: all 1s;
+  }
+  .list-enter, .list-leave-active {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+/* 导航栏菜单选中效果 */
+  .isActive{color: #20a0ff!important;}
+   #app main .aside .is-active{color: #475669;}
 </style>
