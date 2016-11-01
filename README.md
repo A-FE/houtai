@@ -1,6 +1,6 @@
 # 基于vue和ElementUI的后台管理系统
 
-在线DEMO https://peng1992.github.io/houtai/#/activePublic
+[在线DEMO](https://peng1992.github.io/houtai/#/activePublic)
 ## Build Setup
 
 ``` bash
