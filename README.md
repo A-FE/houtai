@@ -1,7 +1,6 @@
-# my-project
+# 基于vue和ElementUI的后台管理系统
 
-> A Vue.js project
-
+在线DEMO https://peng1992.github.io/houtai/#/activePublic
 ## Build Setup
 
 ``` bash
