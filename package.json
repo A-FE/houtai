@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "element-ui": "1.0.0-rc.6",
+    "lodash.debounce": "^4.0.8",
     "vue": "^2.0.3"
   },
   "devDependencies": {
@@ -22,6 +23,7 @@
     "babel-register": "^6.0.0",
     "connect-history-api-fallback": "^1.1.0",
     "css-loader": "^0.25.0",
+    "echarts": "^3.2.3",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^1.0.1",

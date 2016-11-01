@@ -1,5 +1,5 @@
 <template>
-    <div class="index">
+    <div class="detail">
         <h2>{{ activeTitle }}</h2>
         <el-row :gutter="20">
             <el-col :span="5">发起人: {{ hostPerson }}</el-col>
@@ -8,17 +8,20 @@
         </el-row>
           <hr>
         <el-row :gutter="20">
-            <el-tabs @tab-click="routerTo">
+          <el-col :span="24">
+            <el-tabs @tab-click="routerTo" class="tab">
               <el-tab-pane label="活动详情"></el-tab-pane>
               <el-tab-pane label="报名管理"></el-tab-pane>
               <el-tab-pane label="签到"></el-tab-pane>
               <el-tab-pane label="数据统计"></el-tab-pane>
               <el-tab-pane label="评价管理"></el-tab-pane>
             </el-tabs>
+          </el-col>
         </el-row>
+      <transition name="fade">
         <router-view></router-view>
-      <el-button @click.native.prevent="handleCancel"   >取消</el-button>
-      <el-button @click.native.prevent="handleSave"     type="primary">保存</el-button>
+      </transition>
+
 
     </div>
 </template>
@@ -39,12 +42,6 @@
           routerTo: function (val) {
             this.$router.push('/activeManage/detail/page'+val);
           },
-          handleCancel: function () {
-
-          },
-          handleSave: function () {
-
-          }
 
         },
         watch: function () {
@@ -55,5 +52,5 @@
 </script>
 
 <style>
-
+  .detail .el-tabs__item{padding:0 40px;}
 </style>

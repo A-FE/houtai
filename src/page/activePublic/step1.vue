@@ -412,20 +412,12 @@
     },
       beforeRouteLeave: function (to, from, next) {
       if(to.path == '/activePublic/step2'){
+        var _this = this;
         this.isAddressTrue = true ;
-        this.tagsValid = !this.ruleForm.tags.length ? true :false ;
-        this.$refs.ruleForm.validate((valid) => {
-          valid ? next() : next(false);
+        this.tagsValid = (this.ruleForm.tags.length ? false : true) ;
+        this.$refs.ruleForm.validate(function(valid){
+          (!_this.tagsValid && valid) ? next() : next(false);
         }) ;
-      }else if(this.ruleFormChange){
-        this.$confirm('活动发布尚未完成，是否确定离开?', '提示', {
-          type: 'warning'
-        }).then(() =>{
-              this.ruleFormChange = false;
-              next();
-        }).catch(() => {
-
-        })
       }else{
         next();
       }

@@ -1,8 +1,8 @@
 <template>
   <div class="page4">
     <p style="font-size: 15px;">数据统计时间: 活动发布时间 {{ activePublishTime }} ——至今</p>
-    <el-row type="flex" align="middle">
-        <el-col :span="3">
+    <el-row type="flex" align="middle" class="title">
+        <el-col :span="3" style="width: 85px;">
             <h4>数据总览</h4>
         </el-col>
         <el-col :span="20">
@@ -10,7 +10,7 @@
         </el-col>
     </el-row>
 
-    <el-row type="flex" justify="space-around">
+    <el-row type="flex" justify="start" class="row" style="margin-bottom: 20px;">
       <el-col :span="3">
         <div class="square">
           {{ readNum }}
@@ -43,21 +43,23 @@
       </el-col>
     </el-row>
 
-    <el-row type="flex" align="middle">
+    <el-row type="flex" align="middle" class="title">
       <el-col :span="24">
         <h4>数据趋势</h4>
       </el-col>
     </el-row>
       <!-- 折现图 -->
+        <div id="ployline" style="width: 100%;height: 400px;"></div>
 
-    <el-row type="flex" align="middle">
+    <el-row type="flex" align="middle" class="title">
       <el-col :span="24">
         <h4>渠道监控</h4>
       </el-col>
     </el-row>
     <!-- 柱状图 -->
+    <div id="columnChart" style="width: 100%;height: 400px;"></div>
 
-    <el-row type="flex" align="middle">
+    <el-row type="flex" align="middle" class="title">
       <el-col :span="24">
         <h4>渠道监控详情</h4>
       </el-col>
@@ -83,7 +85,7 @@
       </el-pagination>
     </el-row>
 
-    <el-row type="flex" align="middle">
+    <el-row type="flex" align="middle" class="title">
       <el-col :span="24">
         <h4>用户影响力监控</h4>
       </el-col>
@@ -117,6 +119,7 @@
 </template>
 
 <script>
+import echarts from 'echarts'
 
   export default {
     name:'page4',
@@ -128,7 +131,8 @@
         signUpNum: 100,
         translateRate: '10%',
         signInNum:88,
-        tableData: [{
+        tableData: [
+          {
           way: '渠道一',
           readNum: 1500,
           forwardNum: 5000,
@@ -157,7 +161,8 @@
             forwardNum: 1000,
             signUpNum: 123
           }],
-        tableData1: [{
+        tableData1: [
+          {
           name: 'Aleen',
           tel: '18825144569',
           way: '渠道一',
@@ -192,7 +197,126 @@
           forwardNum: 1000,
           readNum: 800,
           signUpNum: 88
-        }]
+        }],
+        ploylineOption:{
+          tooltip: {
+            trigger: 'axis'
+          },
+          legend: {
+            data:['浏览次数','浏览用户数','报名人数']
+          },
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+          },
+          toolbox: {
+            feature: {
+              saveAsImage: {}
+            }
+          },
+          xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['9-13','9-14','9-15','9-16','9-17','9-18','9-19']
+          },
+          yAxis: {
+            type: 'value'
+          },
+          series: [
+            {
+              name:'浏览次数',
+              type:'line',
+              stack: '总量',
+              data:[120, 132, 101, 134, 90, 230, 210]
+            },
+            {
+              name:'浏览用户数',
+              type:'line',
+              stack: '总量',
+              data:[220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+              name:'报名人数',
+              type:'line',
+              stack: '总量',
+              data:[150, 232, 201, 154, 190, 330, 410]
+            }
+          ]
+        },
+        columnChartOption : {
+          tooltip : {
+            trigger: 'axis'
+          },
+          legend: {
+            data:['浏览次数','浏览用户数','报名人数']
+          },
+          calculable : true,
+          xAxis : [
+            {
+              type : 'category',
+              data : ['渠道一','渠道二','渠道三','渠道四'],
+              boundaryGap: ['20%', '20%']
+            }
+          ],
+          yAxis : [
+            {
+              type : 'value',
+              boundaryGap: ['20%', '20%']
+            }
+          ],
+          series : [
+            {
+              name:'浏览次数',
+              type:'bar',
+              stack:'1',
+              data:[320, 332, 301, 334],
+              label:{
+                normal:{
+                  show:true,
+                  position:'top',
+                  textStyle:{
+                    color:'#333',
+                    fontSize:16
+                  }
+                }
+              }
+            },
+            {
+              name:'浏览用户数',
+              type:'bar',
+              stack:'2',
+              data:[120, 132, 101, 134],
+              label:{
+                normal:{
+                  show:true,
+                  position:'top',
+                  textStyle:{
+                    color:'#333',
+                    fontSize:16
+                  }
+                }
+              }
+            },
+            {
+              name:'报名人数',
+              type:'bar',
+              stack: '3',
+              data:[220, 182, 191, 234],
+              label:{
+                normal:{
+                  show:true,
+                  position:'top',
+                  textStyle:{
+                    color:'#333',
+                    fontSize:16
+                  }
+                }
+              }
+            }
+          ]
+        }
       }
     },
     computed: {
@@ -205,15 +329,25 @@
         var mm = date.getMinutes();
         return y+'-'+m+'-'+d+' '+h+':'+mm ;
       }
-
     },
 
     methods: {
-
+      initChart: function () {
+        var _this = this ;
+        setTimeout(function () {
+          var ployline = echarts.init(document.getElementById('ployline'));
+          var columnChart = echarts.init(document.getElementById('columnChart'));
+          ployline.setOption(_this.ploylineOption);
+          columnChart.setOption(_this.columnChartOption);
+        },1000)
+      }
     },
     watch: {
 
 
+    },
+    created: function () {
+      this.initChart();
     }
   }
 
@@ -221,7 +355,9 @@
 </script>
 
 <style>
-  .square{width: 140px;height: 140px; border: solid 1px #20a0ff; text-align: center;border-radius: 6px;padding: 40px 0;box-sizing: border-box;}
-  .square p{color: #999;}
-
+  .page4 .square{width: 140px;height: 140px;border: solid 1px #20a0ff; text-align: center;border-radius: 6px;padding: 40px 0;box-sizing: border-box;}
+  .page4 .square p{color: #999;}
+  .page4 .row .el-col{width: 140px;margin-right: 20px;}
+  .page4 .title{margin-top: 38px;margin-bottom: 15px;}
+  .page4 .title h4{margin:0;border-left: solid 3px #20a0ff;padding-left: 15px;}
 </style>

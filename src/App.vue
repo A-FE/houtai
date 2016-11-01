@@ -85,7 +85,7 @@ header .el-menu-demo{padding-left: 300px!important;}
 /* 主内容区 */
   main{    display: -webkit-box;  display: -ms-flexbox;  display: flex;  min-height: 800px;  border: solid 40px #E9ECF1;  background-color: #FCFCFC;  }
   main .main-left{text-align: center;width: 200px;float: left;}
-  main .main-right{-webkit-box-flex: 1;  -ms-flex: 1;  flex: 1;   background-color: #fff; padding: 50px 70px; }
+  main .main-right{-webkit-box-flex: 1;  -ms-flex: 1;  flex: 1;  background-color: #fff; padding: 50px 70px; }
   main .el-menu{background-color: transparent!important;}
 
 /*  */
@@ -115,4 +115,7 @@ header .el-menu-demo{padding-left: 300px!important;}
 /* 导航栏菜单选中效果 */
   .isActive{color: #20a0ff!important;}
    #app main .aside .is-active{color: #475669;}
+
+  /* 卡片 */
+  .el-card{overflow: visible!important;}
 </style>
