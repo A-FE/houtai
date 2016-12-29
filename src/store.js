@@ -4,7 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 /* 测试数据 */
-const date = new Date('Mon Oct 17 2016 00:00:00 GMT+0800 (中国标准时间)')
+const date = 'Mon Oct 17 2016 00:00:00 GMT+0800 (中国标准时间)'
 const ruleForm = {
     name: '测试活动',
     fenLeis:[

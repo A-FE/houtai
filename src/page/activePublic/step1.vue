@@ -1,11 +1,14 @@
 <template>
     <div class="step1">
+	   <!-- element表单组件 -->
       <el-form :model="ruleForm" class="demo-ruleForm" :rules="rules" ref="ruleForm" label-position="top">
-        <el-form-item label="活动名称" prop="name">
-          <el-input v-model="ruleForm.name" size="large"></el-input>
+         <!-- 表单项，prop属性表示要进行表单验证，验证规则对应为rules的属性name -->
+	     <el-form-item label="活动名称" prop="name">
+            <el-input v-model="ruleForm.name" size="large"></el-input>
         </el-form-item>
 
         <el-form-item label="" prop="fenLei">
+	       <!-- 改装后的表单项，在标签栏添加了一个按钮 -->
           <el-row style="height: 35px;" type="flex" align="middle">
             <el-col :span="3" style="width: 90px;">
               <div class="el-form-item__label" style="padding-bottom: 0;"> 活动分类</div>
@@ -14,11 +17,13 @@
               <el-button type="text" @click.native="dialogFormFenLeiVisible = true" style="margin: 0;padding: 0;">设置</el-button>
             </el-col>
           </el-row>
+
           <el-radio-group v-model="ruleForm.fenLei" >
             <el-radio v-for="item of ruleForm.fenLeis" :label="item.name"></el-radio>
           </el-radio-group>
         </el-form-item>
 
+	      <!-- 这里有一个坑，活动标签并不是一个表单元素，无法使用element自带的验证功能 -->
         <el-form-item label="活动标签" required>
             <el-tag
               v-for="tag in ruleForm.tags"
@@ -34,8 +39,10 @@
           </transition>
         </el-form-item>
 
+
         <el-form-item label="活动时间" required style="width: 750px;">
           <el-col :span="5">
+	        <!-- 时间选择器，表单验证时也有点坑，报错异常，建议不用element自带表单验证，自己写验证规则 -->
             <el-form-item prop="activeStartTimeDate">
               <el-date-picker
                 v-model="ruleForm.activeStartTimeDate"
@@ -126,7 +133,8 @@
 
 
         <el-form-item label="活动地点" required >
-            <address-select
+	        <!-- 自己封装的一个二级联动地址选择器 -->
+	        <address-select
               :province="ruleForm.province"
               :city="ruleForm.city"
               :detail="ruleForm.detail"
@@ -271,7 +279,6 @@
     },
     data: function () {
       return {
-        test:'',
         tagsValid:false,
         tagsError:'请设置标签',
         isAddressTrue:false,
@@ -412,20 +419,12 @@
     },
       beforeRouteLeave: function (to, from, next) {
       if(to.path == '/activePublic/step2'){
+        var _this = this;
         this.isAddressTrue = true ;
-        this.tagsValid = !this.ruleForm.tags.length ? true :false ;
-        this.$refs.ruleForm.validate((valid) => {
-          valid ? next() : next(false);
+        this.tagsValid = (this.ruleForm.tags.length ? false : true) ;
+        this.$refs.ruleForm.validate(function(valid){
+          (!_this.tagsValid && valid) ? next() : next(false);
         }) ;
-      }else if(this.ruleFormChange){
-        this.$confirm('活动发布尚未完成，是否确定离开?', '提示', {
-          type: 'warning'
-        }).then(() =>{
-              this.ruleFormChange = false;
-              next();
-        }).catch(() => {
-
-        })
       }else{
         next();
       }

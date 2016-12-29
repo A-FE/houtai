@@ -5,7 +5,7 @@ import App from './App'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import routeConfig from './router-config'
-import store from 'src/store.js'
+import store from './store.js'
 
 //加载路由中间件
 Vue.use(VueRouter)

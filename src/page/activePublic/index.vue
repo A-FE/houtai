@@ -1,5 +1,5 @@
 <template>
-    <div class="activePublic">
+    <div class="activePublic ">
       <el-steps :space="200" :active="step" class="step">
         <el-step title="活动信息" description=""></el-step>
         <el-step title="报名签到" description=""></el-step>
@@ -28,7 +28,7 @@
     name:'activePublic',
     data: function () {
       return {
-          isRouter:false,
+        isRouter: false,
         preview: true,
         preStep: false,
         nextStep: true,

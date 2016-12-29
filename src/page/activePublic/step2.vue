@@ -67,7 +67,7 @@
                     <el-input   v-model="item.title" size="large"></el-input>
                 </el-col>
                 <el-col :span="10">
-                      <el-input   :placeholder="'提示语:请输入您的'+item.title" size="large" disabled></el-input>
+                      <el-input   :placeholder="'提示语:请输入您的'+item.title" size="large" readonly></el-input>
                 </el-col>
 
                 <el-button icon="delete" @click.native.prevent="removeItem(item)" title="删除"></el-button>
