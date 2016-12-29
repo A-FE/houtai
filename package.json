@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "element-ui": "^1.0.9",
-    "vue": "^2.1.0",
-    "lodash.debounce": "^4.0.8"
+    "lodash.debounce": "^4.0.8",
+    "vue": "2.1.6"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -42,7 +42,7 @@
     "vue-resource": "^1.0.3",
     "vue-router": "^2.1.1",
     "vue-style-loader": "^1.0.0",
-    "vue-template-compiler": "^2.1.0",
+    "vue-template-compiler": "2.1.6",
     "vuex": "^2.1.1",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.3",
@@ -50,7 +50,7 @@
     "webpack-merge": "^0.14.1"
   },
   "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 3.0.0"
+    "node": ">= 6.9.2",
+    "npm": ">= 3.10.9"
   }
 }

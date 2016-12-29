@@ -44,11 +44,13 @@
           <el-col :span="5">
 	        <!-- 时间选择器，表单验证时也有点坑，报错异常，建议不用element自带表单验证，自己写验证规则 -->
             <el-form-item prop="activeStartTimeDate">
+
               <el-date-picker
                 v-model="ruleForm.activeStartTimeDate"
                 type="date"
                 placeholder="活动开始日期">
               </el-date-picker>
+
             </el-form-item>
           </el-col>
 
