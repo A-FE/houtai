@@ -42,7 +42,7 @@ import Element from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import $ from 'jquery'
 
-Vue.use(Element);
+Vue.use(Element)
 
 export default {
   name: 'app',
@@ -71,6 +71,7 @@ export default {
 </script>
 
 <style>
+
 body{margin: 0;}
 #app {
   min-width: 1200px;
@@ -87,7 +88,6 @@ main{display: -webkit-box;display: -ms-flexbox;display: flex;  min-height: 800px
 main .main-left{text-align: center;-webkit-box-flex: 0;-ms-flex: 0 0 200px;flex: 0 0 200px;}
 main .main-right{-webkit-box-flex:1;-ms-flex:1;flex:1; background-color: #fff; padding: 50px 70px; }
 main .el-menu{background-color: transparent!important;}
-
 /*  */
 .router-link{display:inline-block;width:100%;height:100%;text-align:center;color:#475669;text-decoration: none; }
 .is-active .router-link{color:#20a0ff; }

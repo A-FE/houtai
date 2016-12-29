@@ -48,6 +48,7 @@
         <h4>数据趋势</h4>
       </el-col>
     </el-row>
+
     <!-- 折现图 -->
         <div id="ployline" style="width: 100%;height: 400px;"></div>
 
@@ -86,6 +87,7 @@
 
     <el-row>
       <el-table :data="tableData1" border style="width: 100%">
+
         <el-table-column property="name" label="姓名"></el-table-column>
         <el-table-column property="tel" label="手机"></el-table-column>
         <el-table-column property="way" label="渠道"></el-table-column>
@@ -105,6 +107,7 @@
 </template>
 
 <script>
+
   //  TODO:引入图表组件，cnpm引入有点问题
   //import echarts from 'echarts'
 
@@ -191,6 +194,7 @@
             trigger: 'axis'
           },
           legend: {
+
             data: [ '浏览次数', '浏览用户数', '报名人数' ]
           },
           grid: {
@@ -341,6 +345,7 @@
 </script>
 
 <style>
+
   .page4 .square{ width: 140px; height: 140px; border: solid 1px #20a0ff; text-align: center; border-radius: 6px; padding: 40px 0; box-sizing: border-box; }
   .page4 .square p{ color: #999; }
   .page4 .row .el-col{ width: 140px; margin-right: 20px; }

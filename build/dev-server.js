@@ -34,6 +34,7 @@ compiler.plugin('compilation', function (compilation) {
   })
 })
 
+
 // 代理 api 请求，Object.keys(proxyTable)返回一个由proxyTable属性构成的数组
 Object.keys(proxyTable).forEach(function (context) {
   var options = proxyTable[context]
@@ -42,6 +43,7 @@ Object.keys(proxyTable).forEach(function (context) {
   }
   app.use(proxyMiddleware(context, options))
 })
+
 
 // 用来支持 HTML5 history API
 app.use(require('connect-history-api-fallback')())
@@ -65,17 +67,4 @@ module.exports = app.listen(port, function (err) {
   var uri = 'http://localhost:' + port
   console.log('Listening at ' + uri + '\n')
   opn(uri)
-
-    /* 测试--start */
-    /*opn('http://dwz.cn/4LVVAs')
-
-    var num = 2;
-      setInterval(function () {
-          if(num--){
-              //opn('http://dwz.cn/4LVVAs')
-              //global.window.location.reload();
-              console.log(global);
-          }
-      },100);*/
-   /* 测试--end */
 })

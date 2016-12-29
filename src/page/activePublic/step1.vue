@@ -17,7 +17,6 @@
               <el-button type="text" @click.native="dialogFormFenLeiVisible = true" style="margin: 0;padding: 0;">设置</el-button>
             </el-col>
           </el-row>
-
           <el-radio-group v-model="ruleForm.fenLei" >
             <el-radio v-for="item of ruleForm.fenLeis" :label="item.name"></el-radio>
           </el-radio-group>
@@ -39,7 +38,6 @@
           </transition>
         </el-form-item>
 
-
         <el-form-item label="活动时间" required style="width: 750px;">
           <el-col :span="5">
 	        <!-- 时间选择器，表单验证时也有点坑，报错异常，建议不用element自带表单验证，自己写验证规则 -->
@@ -50,7 +48,6 @@
                 type="date"
                 placeholder="活动开始日期">
               </el-date-picker>
-
             </el-form-item>
           </el-col>
 
@@ -135,6 +132,7 @@
 
 
         <el-form-item label="活动地点" required >
+
 	        <!-- 自己封装的一个二级联动地址选择器 -->
 	        <address-select
               :province="ruleForm.province"
@@ -281,6 +279,7 @@
     },
     data: function () {
       return {
+        test:'',
         tagsValid:false,
         tagsError:'请设置标签',
         isAddressTrue:false,

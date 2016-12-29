@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "企后台关管理系统开发",
   "author": "peng <1024371442@qq.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js"
   },
   "dependencies": {
-    "element-ui": "^1.0.9",
+    "element-ui": "1.0.9",
     "lodash.debounce": "^4.0.8",
     "vue": "2.1.6"
   },
@@ -21,6 +21,7 @@
     "babel-preset-es2015": "^6.0.0",
     "babel-preset-stage-2": "^6.0.0",
     "babel-register": "^6.0.0",
+
     "chalk": "^1.1.3",
     "connect-history-api-fallback": "^1.1.0",
     "css-loader": "^0.25.0",
@@ -48,6 +49,7 @@
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
     "webpack-merge": "^0.14.1"
+
   },
   "engines": {
     "node": ">= 6.9.2",
