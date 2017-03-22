@@ -30,11 +30,10 @@
       </el-tabs>
 
       <el-row>
-        <el-table :data="tableData" selection-mode="multiple"
-                  @selectionchange="selectionchange"
-                  @cellclick="handleSelect"
-                  :custom-criteria="['$info', '$positive']"
-                  :custom-background-colors="['#C9E5F5', '#E2F0E4']">
+        <el-table :data="tableData"
+                  @selection-change="selectionchange"
+                  @cell-click="handleSelect"
+                >
           <el-table-column type="selection" ></el-table-column>
           <el-table-column property="name"      label="姓名"      width="80" ></el-table-column>
           <el-table-column property="tel"       label="手机号"    width="130" ></el-table-column>
@@ -47,8 +46,8 @@
 
       <el-row  type="flex" align="middle" justify="end" style="padding: 20px 0;">
           <el-pagination
-            @sizechange=""
-            @currentchange=""
+            @size-change=""
+            @current-change=""
             :current-page="1"
             :page-sizes="[100, 200, 300, 400]"
             :page-size="100"

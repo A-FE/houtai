@@ -443,8 +443,8 @@
     }
     .step1 .el-form-item.is-required .el-form-item__label:before { display: none; }
     /* 标签 */
-    .step1   .el-tag{padding: 10px 15px;margin:10px;vertical-align: middle;}
-    .step1   .el-tag:first-child{margin-left: 0;}
+    .step1 .el-tag{padding: 10px 15px;margin:10px;vertical-align: middle;height: auto;}
+    .step1 .el-tag:first-child{margin-left: 0;}
 
     /* 对话框 */
     .step1 .el-dialog--small{width: 564px;}

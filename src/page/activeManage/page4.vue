@@ -75,7 +75,7 @@
       </el-table>
     </el-row>
     <el-row type="flex" align="middle" justify="end" style="padding: 20px 0;">
-      <el-pagination @sizechange="" @currentchange="" :current-page="1" :page-sizes="[100, 200, 300, 400]" :page-size="100" layout="sizes, prev, pager, next" :total="1000">
+      <el-pagination @size-change="" @current-change="" :current-page="1" :page-sizes="[100, 200, 300, 400]" :page-size="100" layout="sizes, prev, pager, next" :total="1000">
       </el-pagination>
     </el-row>
 
@@ -97,7 +97,7 @@
       </el-table>
     </el-row>
     <el-row type="flex" align="middle" justify="end" style="padding: 20px 0;">
-      <el-pagination @sizechange="" @currentchange="" :current-page="1" :page-sizes="[100, 200, 300, 400]" :page-size="100" layout="sizes, prev, pager, next" :total="1000">
+      <el-pagination @size-change="" @current-change="" :current-page="1" :page-sizes="[100, 200, 300, 400]" :page-size="100" layout="sizes, prev, pager, next" :total="1000">
       </el-pagination>
     </el-row>
 

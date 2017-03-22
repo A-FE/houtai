@@ -7,7 +7,7 @@
           <span>活动总数</span>
         </el-col>
         <el-col :span="8">
-          {{ totalActiveNum }}<br>
+          {{ totalActiveNum }}<br>F
           <span>报名总数</span>
         </el-col>
         <el-col :span="8" style="border: none;">
@@ -44,9 +44,9 @@
         </el-col>
       </el-row>
 
-      <el-table :data="filteredTableData" selection-mode="multiple" style="width: 100%"
-                @cellclick="handleSelect" @selectionchange="selectionchange" :custom-criteria="['$info', '$positive']"
-                :custom-background-colors="['#C9E5F5', '#E2F0E4']">
+      <el-table :data="filteredTableData"  style="width: 100%"
+                @cell-click="handleSelect" @selection-change="selectionchange"
+                >
         <el-table-column type="selection" width="50"></el-table-column>
         <el-table-column property="title" label="活动名称"></el-table-column>
         <el-table-column property="type" label="活动分类" ></el-table-column>
@@ -61,8 +61,6 @@
 
       <el-row type="flex" justify="end" style="padding:20px 0; ">
         <el-pagination
-          @sizechange="pageSizechange"
-          @currentchange="pageCurrentchange"
           :current-page="5"
           :page-sizes="[100, 200, 300, 400]"
           :page-size="100"
@@ -154,10 +152,6 @@
         this.selectItems = arr;
         this.activeNum = this.selectItems.length;
       },
-      handleSelectFenLei:function(){},
-      handleSetFenLei:function(){
-
-      },
       handleRemove:function(){
         var tableData = this.tableData;
         this.selectItems.forEach(function (id) {
@@ -169,10 +163,6 @@
         });
         this.selectItems = [];
       },
-      handleMoveToTop:function(){},
-      handleCopy:function(){},
-      pageSizechange:function(){},
-      pageCurrentchange:function(){}
     }
   }
 </script>

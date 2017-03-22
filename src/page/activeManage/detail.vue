@@ -21,8 +21,6 @@
       <transition name="fade">
         <router-view></router-view>
       </transition>
-
-
     </div>
 </template>
 
@@ -39,10 +37,9 @@
             }
         },
         methods: {
-          routerTo: function (val) {
-            this.$router.push('/activeManage/detail/page'+val);
+          routerTo: function (tab,event) {
+            this.$router.push('/activeManage/detail/page'+(tab.index+1));
           },
-
         },
         watch: function () {
 

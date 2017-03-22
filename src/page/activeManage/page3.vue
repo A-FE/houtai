@@ -44,8 +44,8 @@
 
       <el-row  type="flex" align="middle" justify="end" style="padding: 20px 0;">
         <el-pagination
-          @sizechange=""
-          @currentchange=""
+          @size-change=""
+          @current-change=""
           :current-page="1"
           :page-sizes="[100, 200, 300, 400]"
           :page-size="100"
