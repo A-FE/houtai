@@ -2,6 +2,7 @@
 > 升级为vue@2.16 + Element@1.0.9
 
 [在线DEMO](http://dahouge.oschina.io/houtai/dist/#/activePublic)
+[详细教程](http://www.jianshu.com/p/d87d7140944e)
 ## Build Setup
 
 ``` bash
