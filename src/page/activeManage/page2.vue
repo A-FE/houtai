@@ -12,13 +12,13 @@
 
 
       <el-row :gutter="20" align="middle" type="flex" style="padding: 20px;">
-        <el-col :span="6" style="width: 160px;">已选择{{ selectNum }} 个报名用户</el-col>
-        <el-col :span="8" style="width: 300px;" class="btn-group">
+        <el-col style="width: 170px;">已选择{{ selectNum }} 个报名用户</el-col>
+        <el-col style="width: 400px;" class="btn-group">
           <el-button>通过</el-button>
           <el-button>拒绝</el-button>
           <el-button>退款</el-button>
         </el-col>
-        <el-col :span="8" :offset="2">
+        <el-col style="width:400px;">
             <el-button>导入excel</el-button>
             <el-button>导出excel</el-button>
             <el-button>群发信息</el-button>

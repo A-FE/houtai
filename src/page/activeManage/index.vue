@@ -7,7 +7,7 @@
           <span>活动总数</span>
         </el-col>
         <el-col :span="8">
-          {{ totalActiveNum }}<br>F
+          {{ totalActiveNum }}<br>
           <span>报名总数</span>
         </el-col>
         <el-col :span="8" style="border: none;">
